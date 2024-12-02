@@ -225,100 +225,102 @@ function Home() {
         </button>
       </div>
 
-      <div className="d-flex">
+      <div className="container-fluid">
+        <div className="row">
 
-        <div className="m-2 p-2 shadow-lg" style={{ width: "340px" }}>
-          <h5>Up to 70 % off |</h5>
-          <div className="d-flex flex-wrap">
-            {products1.map((p1) => {
-              return (
-                <div
-                  className="me-2 my-2 border p-1"
-                  style={{ height: "160px", width: '140px' }}
-                >
-                  <Link
-                    to={"/products/" + p1.id}
-                    className="link-body-emphasis link-underline-opacity-0 "
+          <div className="p-3 shadow-lg col-12 col-md-3">
+            <h5>Up to 70 % off |</h5>
+            <div className="d-flex flex-wrap">
+              {products1.map((p1) => {
+                return (
+                  <div
+                    className="me-2 my-2 border p-1"
+                    style={{ height: "160px", width: '140px' }}
                   >
-                  <img src={p1.image} width={130} height={100}></img>
-                  
-                    <p className="overflow-hidden" style={{ height: '53px' }}>{p1.title}</p>
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+                    <Link
+                      to={"/products/" + p1.id}
+                      className="link-body-emphasis link-underline-opacity-0 "
+                    >
+                      <img src={p1.image} width={130} height={100}></img>
 
-        <div className="m-2 p-2 shadow-lg" style={{ width: "340px" }}>
-          <h5>Bangles and Jewellers</h5>
-          <div className="d-flex flex-wrap">
-            {products2.map((p2) => {
-              return (
-                <div
-                  className="me-2 my-2 border p-1"
-                  style={{ height: "160px", width: '140px' }}
-                >
-                  <Link
-                    to={"/products/" + p2.id}
-                    className="link-body-emphasis link-underline-opacity-0"
+                      <p className="overflow-hidden" style={{ height: '53px' }}>{p1.title}</p>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="p-3 shadow-lg col-12 col-md-3">
+            <h5>Bangles and Jewellers</h5>
+            <div className="d-flex flex-wrap">
+              {products2.map((p2) => {
+                return (
+                  <div
+                    className="me-2 my-2 border p-1"
+                    style={{ height: "160px", width: '140px' }}
                   >
-                  <img src={p2.image} width={130} height={100}></img>
-                  
-                    <p className="overflow-hidden" style={{ height: '53px' }}>{p2.title}</p>
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+                    <Link
+                      to={"/products/" + p2.id}
+                      className="link-body-emphasis link-underline-opacity-0"
+                    >
+                      <img src={p2.image} width={130} height={100}></img>
 
-        <div className="m-2 p-2 shadow-lg" style={{ width: "340px" }}>
-          <h5>USB and Chips</h5>
-          <div className="d-flex flex-wrap">
-            {products3.map((p3) => {
-              return (
-                <div
-                  className="me-2 my-2 border p-1"
-                  style={{ height: "160px", width: '140px' }}
-                >
-                  <Link
-                    to={"/products/" + p3.id}
-                    className="link-body-emphasis link-underline-opacity-0"
+                      <p className="overflow-hidden" style={{ height: '53px' }}>{p2.title}</p>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="p-3 shadow-lg col-12 col-md-3">
+            <h5>USB and Chips</h5>
+            <div className="d-flex flex-wrap">
+              {products3.map((p3) => {
+                return (
+                  <div
+                    className="me-2 my-2 border p-1"
+                    style={{ height: "160px", width: '140px' }}
                   >
-                    <img src={p3.image} width={130} height={100}></img>
+                    <Link
+                      to={"/products/" + p3.id}
+                      className="link-body-emphasis link-underline-opacity-0"
+                    >
+                      <img src={p3.image} width={130} height={100}></img>
 
-                    <p className="overflow-hidden" style={{ height: '53px' }}>{p3.title}</p>
-                  </Link>
-                </div>
-              );
-            })}
+                      <p className="overflow-hidden" style={{ height: '53px' }}>{p3.title}</p>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
 
-        <div className="m-2 p-2 shadow-lg" style={{ width: "340px" }}>
-          <h5>Minimum 50% off |</h5>
-          <div className="d-flex flex-wrap">
-            {products4.map((p4) => {
-              return (
-                <div
-                  className="me-2 my-2 border p-1"
-                  style={{ height: "160px", width: '140px' }}
-                >
-                  <Link
-                    to={"/products/" + p4.id}
-                    className="link-body-emphasis link-underline-opacity-0"
+          <div className="p-3 shadow-lg col-12 col-md-3">
+            <h5>Minimum 50% off |</h5>
+            <div className="d-flex flex-wrap">
+              {products4.map((p4) => {
+                return (
+                  <div
+                    className="me-2 my-2 border p-1"
+                    style={{ height: "160px", width: '140px' }}
                   >
-                    <img src={p4.image} width={130} height={100}></img>
+                    <Link
+                      to={"/products/" + p4.id}
+                      className="link-body-emphasis link-underline-opacity-0"
+                    >
+                      <img src={p4.image} width={130} height={100}></img>
 
-                    <p className="overflow-hidden" style={{ height: '53px' }}>{p4.title}</p>
-                  </Link>
-                </div>
-              );
-            })}
+                      <p className="overflow-hidden" style={{ height: '53px' }}>{p4.title}</p>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </>
   );
